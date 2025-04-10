@@ -79,12 +79,10 @@
 
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 
-		<!-- Versiones compatibles con AGP 8+ -->
-		<preference name="ANDROID_GOOGLE_SERVICES_PLUGIN_VERSION" default="4.4.1" />
-		<preference name="ANDROID_CRASHLYTICS_PLUGIN_VERSION" default="3.0.1" />
+		<!-- Plugins gradle compatibles con AGP 8+ -->
+		<framework type="gradlePlugin" name="com.google.gms.google-services" spec="4.4.1" />
+		<framework type="gradlePlugin" name="com.google.firebase.crashlytics" spec="3.0.1" />
 
-		<framework type="gradlePlugin" name="com.google.gms.google-services" spec="$ANDROID_GOOGLE_SERVICES_PLUGIN_VERSION" />
-		<framework type="gradlePlugin" name="com.google.firebase.crashlytics" spec="$ANDROID_CRASHLYTICS_PLUGIN_VERSION" />
 		<!-- Default versions for Gradle dependencies -->
 		<preference name="ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION" default="18.1.1" />
 		<preference name="ANDROID_PLAY_SERVICES_AUTH_VERSION" default="21.3.0" />
