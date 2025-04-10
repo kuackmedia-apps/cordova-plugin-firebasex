@@ -14,7 +14,10 @@ repositories {
     google()
 }
 
-apply plugin: com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsPlugin
+plugins {
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
 android {
     buildTypes {
         debug {

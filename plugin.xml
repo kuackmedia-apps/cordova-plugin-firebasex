@@ -78,6 +78,8 @@
 		<source-file src="src/android/JavaScriptException.java" target-dir="src/org/apache/cordova/firebase"/>
 
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+		<framework type="gradlePlugin" name="com.google.gms.google-services" spec="4.4.1" />
+		<framework type="gradlePlugin" name="com.google.firebase.crashlytics" spec="3.0.1" />
 
 		<!-- Default versions for Gradle dependencies -->
 		<preference name="ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION" default="18.1.1" />
